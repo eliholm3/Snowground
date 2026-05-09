@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bwy0uauegy4bl"]
+
+[ext_resource type="PackedScene" uid="uid://bjsmr3mrpcjfo" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/Christmas Tree/star.glb" id="1_285vu"]
+[ext_resource type="Material" uid="uid://bov7wbw7fb2tw" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/M_gold.tres" id="2_0c0q7"]
+
+[node name="star" instance=ExtResource("1_285vu")]
+
+[node name="star" parent="." index="0"]
+material_override = ExtResource("2_0c0q7")

@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://fe7p066rqebu"]
+
+[ext_resource type="PackedScene" uid="uid://4gridhq722yl" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/sign.glb" id="1_r2mq0"]
+[ext_resource type="Material" uid="uid://ccsmueae4t66q" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/M_sign.tres" id="2_ho5rx"]
+[ext_resource type="PackedScene" uid="uid://ctambxd2qhla7" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Prefabs/candy_cane_2.tscn" id="3_vlsfj"]
+[ext_resource type="PackedScene" uid="uid://cek0tujnikkv7" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Prefabs/candy_cane_1.tscn" id="4_c8ekg"]
+[ext_resource type="PackedScene" uid="uid://do3rrdyuj8plh" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Prefabs/ribbon.tscn" id="5_u4q21"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r2mq0"]
+size = Vector3(0.055908203, 1.0771332, 2.8981934)
+
+[node name="sign" instance=ExtResource("1_r2mq0")]
+
+[node name="sign" parent="." index="0"]
+material_override = ExtResource("2_ho5rx")
+
+[node name="candy_cane_2" parent="." index="1" instance=ExtResource("3_vlsfj")]
+transform = Transform3D(-2.7694497e-07, 0, -6.335763, -3.1678815, 5.4869313, 1.3847249e-07, 5.4869313, 3.1678815, -2.398414e-07, 0.08150029, -0.059624255, 1.0907222)
+
+[node name="candy_cane_1" parent="." index="2" instance=ExtResource("4_c8ekg")]
+transform = Transform3D(-1.8833008e-07, 0, 4.3084893, -3.7312617, 2.154245, -1.6309863e-07, -2.154245, -3.7312617, -9.416504e-08, 0.047436208, 0.75937134, -1.1288493)
+
+[node name="candy_cane_3" parent="." index="3" instance=ExtResource("4_c8ekg")]
+transform = Transform3D(-1.8833002e-07, 0, -4.3084893, -1.115119, 4.161681, 4.8743413e-08, 4.161681, 1.115119, -1.8191284e-07, 0.047436208, 0.6499208, -1.385279)
+
+[node name="ribbon" parent="." index="4" instance=ExtResource("5_u4q21")]
+transform = Transform3D(3.9860446, 0, 0, 0, 3.8502233, -1.0316641, 0, 1.0316641, 3.8502233, 0.013900921, 0.21034679, -1.2379962)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0008544922, 0.4622879, -0.0013427734)
+shape = SubResource("BoxShape3D_r2mq0")

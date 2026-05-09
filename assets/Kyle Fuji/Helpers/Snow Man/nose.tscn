@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://htkwg6qlx0ts"]
+
+[ext_resource type="PackedScene" uid="uid://dmeecp6qowx6r" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/Snow Man/nose.glb" id="1_oj7v7"]
+[ext_resource type="Material" uid="uid://dgg6uxbnl8vno" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/Snow Man/M_snow_man_nose.tres" id="2_wwc7u"]
+
+[node name="nose" instance=ExtResource("1_oj7v7")]
+
+[node name="nose" parent="." index="0"]
+material_override = ExtResource("2_wwc7u")

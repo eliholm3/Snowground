@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://da465vsggndok"]
+
+[ext_resource type="PackedScene" uid="uid://dh74ylvorpfm6" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/wreath.glb" id="1_342km"]
+[ext_resource type="Material" uid="uid://b2ul4gku6kvp0" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/M_wreath.tres" id="2_8xfpm"]
+[ext_resource type="PackedScene" uid="uid://do3rrdyuj8plh" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Prefabs/ribbon.tscn" id="3_chxlo"]
+
+[node name="wreath_2" instance=ExtResource("1_342km")]
+
+[node name="wreath" parent="." index="0"]
+material_override = ExtResource("2_8xfpm")
+
+[node name="ribbon" parent="." index="1" instance=ExtResource("3_chxlo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.3267882, -0.021067873, 0.19558445, 0)

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d0ifkfp2v47dw"]
+
+[ext_resource type="PackedScene" uid="uid://cep1ax8tnxvnb" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/Candles/candle_stick_3.glb" id="1_wugjt"]
+[ext_resource type="PackedScene" uid="uid://2fs2dxsbrear" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Helpers/candle_flame.tscn" id="2_panob"]
+
+[node name="candle_3" instance=ExtResource("1_wugjt")]
+
+[node name="candle_flame" parent="." index="1" instance=ExtResource("2_panob")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05704597, 0)

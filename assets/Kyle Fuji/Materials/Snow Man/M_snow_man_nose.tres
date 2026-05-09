@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dgg6uxbnl8vno"]
+
+[ext_resource type="Texture2D" uid="uid://c2f2p8ucxrsdm" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Textures/Snow Man/carrot.png" id="1_chraa"]
+
+[resource]
+albedo_texture = ExtResource("1_chraa")

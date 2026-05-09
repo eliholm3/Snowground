@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://baks86hhuu1ox"]
+
+[ext_resource type="PackedScene" uid="uid://bae22eg0mm0kg" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/Candles/candle_holder_5.glb" id="1_g4dh7"]
+[ext_resource type="Material" uid="uid://bov7wbw7fb2tw" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/M_gold.tres" id="2_1em6d"]
+[ext_resource type="PackedScene" uid="uid://cke2npgc87780" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Prefabs/candle_1.tscn" id="3_nb3ow"]
+
+[node name="candle_8" instance=ExtResource("1_g4dh7")]
+
+[node name="candle_holder_5" parent="." index="0"]
+material_override = ExtResource("2_1em6d")
+
+[node name="candle_1" parent="." index="1" instance=ExtResource("3_nb3ow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2424866, 0)
+
+[node name="candle_2" parent="." index="2" instance=ExtResource("3_nb3ow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22179139, 0.06949572)
+
+[node name="candle_6" parent="." index="3" instance=ExtResource("3_nb3ow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22179139, -0.06941803)
+
+[node name="candle_7" parent="." index="4" instance=ExtResource("3_nb3ow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22179139, -0.13218305)
+
+[node name="candle_8" parent="." index="5" instance=ExtResource("3_nb3ow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22179139, -0.18894845)
+
+[node name="candle_9" parent="." index="6" instance=ExtResource("3_nb3ow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22179139, -0.24340633)
+
+[node name="candle_3" parent="." index="7" instance=ExtResource("3_nb3ow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22179139, 0.13226074)
+
+[node name="candle_4" parent="." index="8" instance=ExtResource("3_nb3ow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22179139, 0.18902615)
+
+[node name="candle_5" parent="." index="9" instance=ExtResource("3_nb3ow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22179139, 0.2439455)

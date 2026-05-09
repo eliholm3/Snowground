@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bef1tnj045a53"]
+
+[ext_resource type="PackedScene" uid="uid://dh74ylvorpfm6" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/wreath.glb" id="1_43jw4"]
+[ext_resource type="Material" uid="uid://b2ul4gku6kvp0" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/M_wreath.tres" id="2_ul85x"]
+
+[node name="wreath_1" instance=ExtResource("1_43jw4")]
+
+[node name="wreath" parent="." index="0"]
+material_override = ExtResource("2_ul85x")

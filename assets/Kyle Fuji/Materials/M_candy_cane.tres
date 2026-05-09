@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cfsci636dl2nr"]
+
+[ext_resource type="Shader" uid="uid://bjqm468xj5khm" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/S_basic_texture_mapper.gdshader" id="1_bptmq"]
+[ext_resource type="Texture2D" uid="uid://bjk37yvv24ts5" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Textures/Candy Cane/candy_cane_map.png" id="2_k61bp"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_bptmq")
+shader_parameter/color_map = ExtResource("2_k61bp")
+shader_parameter/color1 = Color(1, 1, 1, 1)
+shader_parameter/color2 = Color(1, 0, 0, 1)
+shader_parameter/metallic1 = 0.0
+shader_parameter/metallic2 = 0.0
+shader_parameter/roughness1 = 0.50000002375
+shader_parameter/roughness2 = 0.50000002375

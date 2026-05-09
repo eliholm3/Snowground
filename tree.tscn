@@ -1,0 +1,9 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" uid="uid://dhpd2ysaoo2ng" path="res://assets/Kyle Fuji/Prefabs/christmas_tree_1.tscn" id="1_tree"]
+
+[node name="Tree" type="Node3D"]
+
+[node name="christmas_tree_1" parent="." instance=ExtResource("1_tree")]
+
+[node name="StaticBody3D" parent="christmas_tree_1" groups=["tree"]]

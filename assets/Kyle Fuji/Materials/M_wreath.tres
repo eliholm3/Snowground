@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b2ul4gku6kvp0"]
+
+[ext_resource type="Texture2D" uid="uid://ce13rqmip5pwg" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Textures/Wreath/wreath_map.png" id="1_i8u83"]
+
+[resource]
+albedo_texture = ExtResource("1_i8u83")

@@ -1,0 +1,199 @@
+[gd_scene format=3 uid="uid://bsegipu6mmwyy"]
+
+[ext_resource type="PackedScene" uid="uid://dhpd2ysaoo2ng" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Prefabs/christmas_tree_1.tscn" id="4_dkmag"]
+[ext_resource type="PackedScene" uid="uid://do3rrdyuj8plh" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Prefabs/ribbon.tscn" id="4_v6v1l"]
+[ext_resource type="PackedScene" uid="uid://cmrvyjrrvtshe" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Prefabs/christmas_tree_2.tscn" id="5_27pxw"]
+[ext_resource type="PackedScene" uid="uid://cful6836m457o" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Prefabs/snow_man.tscn" id="6_lsy4g"]
+[ext_resource type="PackedScene" uid="uid://cek0tujnikkv7" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Prefabs/candy_cane_1.tscn" id="33_w45d1"]
+[ext_resource type="PackedScene" uid="uid://ctambxd2qhla7" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Prefabs/candy_cane_2.tscn" id="34_reg4u"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s4p8f"]
+
+[sub_resource type="Environment" id="Environment_xuito"]
+background_mode = 1
+background_color = Color(0, 0.078431375, 0.20784314, 1)
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0, 0.078431375, 0.20784314, 1)
+fog_density = 1.0
+fog_depth_begin = 0.0
+volumetric_fog_enabled = true
+volumetric_fog_albedo = Color(0, 0.078431375, 0.20784314, 1)
+volumetric_fog_emission = Color(0, 0.078431375, 0.20784314, 1)
+
+[node name="ChristmasScene" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(159.90283, 0, 0, 0, 17.793226, 0, 0, 0, 174.13705, -5.7568874, 0, -1.0098592)
+mesh = SubResource("PlaneMesh_s4p8f")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.32436502, 5.271061, -0.0018883348)
+light_color = Color(0.32156864, 0.34901962, 0.85882354, 1)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_xuito")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1.9106855e-15, -1, -4.371139e-08, -4.371139e-08, -4.371139e-08, 1, -1, 0, -4.371139e-08, -2.8506894, 4.0928288, 0.07495606)
+spot_range = 19.185455
+spot_angle = 65.63662
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="."]
+transform = Transform3D(1.9106855e-15, -1, -4.371139e-08, -4.371139e-08, -4.371139e-08, 1, -1, 0, -4.371139e-08, -0.52600956, 4.0928288, 1.5398663)
+shadow_enabled = true
+spot_range = 19.185455
+spot_angle = 65.63662
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="."]
+transform = Transform3D(0.49999997, -0.2241439, 0.8365163, -1.1313344e-08, 0.9659258, 0.2588191, -0.8660254, -0.12940955, 0.4829629, 2.3449452, 1.5047305, 2.3844833)
+spot_range = 19.185455
+spot_angle = 65.63662
+
+[node name="SpotLight3D5" type="SpotLight3D" parent="."]
+transform = Transform3D(-0.50000006, -0.2241439, 0.8365163, -1.1313345e-08, 0.9659258, 0.2588191, -0.8660254, 0.12940957, -0.48296297, 2.2381668, 1.5047305, -2.608389)
+spot_range = 19.185455
+spot_angle = 65.63662
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="."]
+transform = Transform3D(1.9106855e-15, -1, -4.371139e-08, -4.371139e-08, -4.371139e-08, 1, -1, 0, -4.371139e-08, -0.19177282, 4.0928288, -1.7561308)
+spot_range = 19.185455
+spot_angle = 65.63662
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.032319117, -0.32371348, 0.945603, 0, 0.9460973, 0.32388267, -0.9994776, -0.010467602, 0.030577026, 1.0565248, 0.9064393, -0.016934447)
+
+[node name="snow_man" parent="." instance=ExtResource("6_lsy4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.31465554, 1.1920929e-07, -0.0058425143)
+
+[node name="christmas_tree_1" parent="." instance=ExtResource("4_dkmag")]
+transform = Transform3D(0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, 0.70710677, -1.0920619, 0, 1.1892297)
+
+[node name="christmas_tree_2" parent="." instance=ExtResource("4_dkmag")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.4646537, -2.3841858e-07, -0.0809325)
+
+[node name="christmas_tree_3" parent="." instance=ExtResource("5_27pxw")]
+transform = Transform3D(0.49999997, 0, 0.86602545, 0, 1, 0, -0.86602545, 0, 0.49999997, -0.8428073, 0, -1.2700748)
+
+[node name="ribbon" parent="." instance=ExtResource("4_v6v1l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19970286, 0.081033975, -0.0034117608)
+
+[node name="candy_cane_1" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.04550314, 0, -0.46965384)
+
+[node name="candy_cane_2" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.09720105, 0, -0.46965384)
+
+[node name="candy_cane_3" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.15805024, 0, -0.46965384)
+
+[node name="candy_cane_4" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.20685709, 0, -0.46965384)
+
+[node name="candy_cane_5" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.26062053, 0, -0.46965384)
+
+[node name="candy_cane_6" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.04550314, 0, -0.5507719)
+
+[node name="candy_cane_7" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.09720105, 0, -0.5507719)
+
+[node name="candy_cane_8" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.15805024, 0, -0.5507719)
+
+[node name="candy_cane_9" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.20685709, 0, -0.5507719)
+
+[node name="candy_cane_10" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.26062053, 0, -0.5507719)
+
+[node name="candy_cane_11" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.04550314, 0, -0.64165276)
+
+[node name="candy_cane_12" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.09720105, 0, -0.64165276)
+
+[node name="candy_cane_13" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.15805024, 0, -0.64165276)
+
+[node name="candy_cane_14" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.20685709, 0, -0.64165276)
+
+[node name="candy_cane_15" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.26062053, 0, -0.64165276)
+
+[node name="candy_cane_16" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.04550314, 0, -0.732556)
+
+[node name="candy_cane_17" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.09720105, 0, -0.732556)
+
+[node name="candy_cane_18" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.15805024, 0, -0.732556)
+
+[node name="candy_cane_19" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.20685709, 0, -0.732556)
+
+[node name="candy_cane_20" parent="." instance=ExtResource("33_w45d1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.26062053, 0, -0.732556)
+
+[node name="candy_cane_21" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.02991873, 0, 0.44428027)
+
+[node name="candy_cane_22" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.0865078, 0, 0.44428027)
+
+[node name="candy_cane_23" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.14068687, 0, 0.44428027)
+
+[node name="candy_cane_24" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.20179206, 0, 0.44428027)
+
+[node name="candy_cane_25" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.26340115, 0, 0.44428027)
+
+[node name="candy_cane_26" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.02991873, 0, 0.5243883)
+
+[node name="candy_cane_27" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.0865078, 0, 0.5243883)
+
+[node name="candy_cane_28" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.14068687, 0, 0.5243883)
+
+[node name="candy_cane_29" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.20179206, 0, 0.5243883)
+
+[node name="candy_cane_30" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.26340115, 0, 0.5243883)
+
+[node name="candy_cane_31" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.02991873, 0, 0.60139227)
+
+[node name="candy_cane_32" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.0865078, 0, 0.60139227)
+
+[node name="candy_cane_33" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.14068687, 0, 0.60139227)
+
+[node name="candy_cane_34" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.20179206, 0, 0.60139227)
+
+[node name="candy_cane_35" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.26340115, 0, 0.60139227)
+
+[node name="candy_cane_36" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.02991873, 0, 0.68454814)
+
+[node name="candy_cane_37" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.0865078, 0, 0.68454814)
+
+[node name="candy_cane_38" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.14068687, 0, 0.68454814)
+
+[node name="candy_cane_39" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.20179206, 0, 0.68454814)
+
+[node name="candy_cane_40" parent="." instance=ExtResource("34_reg4u")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.26340115, 0, 0.68454814)

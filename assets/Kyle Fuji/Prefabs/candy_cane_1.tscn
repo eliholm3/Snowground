@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cek0tujnikkv7"]
+
+[ext_resource type="PackedScene" uid="uid://dtswwn72ujhhd" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/candy_cane.glb" id="1_mka0l"]
+[ext_resource type="Material" uid="uid://cfsci636dl2nr" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/M_candy_cane.tres" id="2_nyc66"]
+
+[node name="candy_cane_1" instance=ExtResource("1_mka0l")]
+
+[node name="candy_cane" parent="." index="0"]
+material_override = ExtResource("2_nyc66")

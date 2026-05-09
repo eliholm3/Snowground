@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ctambxd2qhla7"]
+
+[ext_resource type="PackedScene" uid="uid://dtswwn72ujhhd" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/candy_cane.glb" id="1_sfdmd"]
+[ext_resource type="Material" uid="uid://cfsci636dl2nr" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/M_candy_cane.tres" id="2_c2a8f"]
+[ext_resource type="PackedScene" uid="uid://do3rrdyuj8plh" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Prefabs/ribbon.tscn" id="3_tmi3o"]
+
+[node name="candy_cane_2" instance=ExtResource("1_sfdmd")]
+
+[node name="candy_cane" parent="." index="0"]
+material_override = ExtResource("2_c2a8f")
+
+[node name="ribbon" parent="." index="1" instance=ExtResource("3_tmi3o")]
+transform = Transform3D(-1.8204675e-08, 0, 0.4164744, 0, 0.4164744, 0, -0.4164744, 0, -1.8204675e-08, 0, 0.0717954, 0.0007478297)

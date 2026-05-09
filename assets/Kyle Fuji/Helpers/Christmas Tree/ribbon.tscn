@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bmgudkhgk3ygx"]
+
+[ext_resource type="PackedScene" uid="uid://bh53dk3dassli" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/Christmas Tree/ribbon.glb" id="1_xv5fd"]
+[ext_resource type="Material" uid="uid://bbtjkjen8qins" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/Christmas Tree/M_tree_ribbon.tres" id="2_wgfth"]
+
+[node name="ribbon" instance=ExtResource("1_xv5fd")]
+
+[node name="ribbon" parent="." index="0"]
+material_override = ExtResource("2_wgfth")

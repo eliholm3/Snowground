@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c6t73sdstnd45"]
+
+[ext_resource type="PackedScene" uid="uid://53kx8advm5y1" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/Christmas Tree/ornaments_2.glb" id="1_urk35"]
+[ext_resource type="Material" uid="uid://beknwg6ww7edb" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/Christmas Tree/M_green_lights.tres" id="2_tvg4t"]
+
+[node name="ornaments_2" instance=ExtResource("1_urk35")]
+
+[node name="ornaments_2" parent="." index="0"]
+material_override = ExtResource("2_tvg4t")

@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://icgn8dsyudvo"]
+
+[ext_resource type="Texture2D" uid="uid://bp0qmi756li1k" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Textures/Snow Man/snow_man_color.png" id="1_5v7uo"]
+
+[resource]
+albedo_texture = ExtResource("1_5v7uo")

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bcpwucsqv87nk"]
+
+[ext_resource type="PackedScene" uid="uid://18254n8pdhln" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/present_2.glb" id="1_trr1v"]
+[ext_resource type="Material" uid="uid://cnntuj0hf3t8h" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/Presents/M_present_2_white_red.tres" id="2_opyog"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_trr1v"]
+size = Vector3(0.25274658, 0.2567749, 0.2545166)
+
+[node name="present_2" instance=ExtResource("1_trr1v")]
+
+[node name="present_2" parent="." index="0"]
+material_override = ExtResource("2_opyog")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0005187988, 0.124420166, -0.0005493164)
+shape = SubResource("BoxShape3D_trr1v")

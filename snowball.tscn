@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://cqmkxj4bmapay"]
+
+[ext_resource type="Script" path="res://snowball.gd" id="1_snowball"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_1"]
+radius = 0.12
+height = 0.24
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1"]
+albedo_color = Color(0.95, 0.95, 1.0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_outline"]
+radius = 0.138
+height = 0.276
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_outline"]
+shading_mode = 0
+cull_mode = 1
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_1"]
+radius = 0.12
+
+[node name="Snowball" type="RigidBody3D"]
+script = ExtResource("1_snowball")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_1")
+mesh = SubResource("SphereMesh_1")
+
+[node name="Outline" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_outline")
+mesh = SubResource("SphereMesh_outline")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_1")

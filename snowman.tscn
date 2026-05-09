@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c8nowman0snow"]
+
+[ext_resource type="Script" path="res://snowman.gd" id="1_snowman"]
+[ext_resource type="PackedScene" uid="uid://x0pr6n1et6l6" path="res://assets/Kyle Fuji/Models/Snow Man/snow_man.glb" id="2_body"]
+[ext_resource type="Material" uid="uid://icgn8dsyudvo" path="res://assets/Kyle Fuji/Materials/Snow Man/M_snow_man.tres" id="3_mat"]
+[ext_resource type="PackedScene" uid="uid://cvjkgyomgsnd" path="res://assets/Kyle Fuji/Helpers/Snow Man/arms.tscn" id="4_arms"]
+[ext_resource type="PackedScene" uid="uid://htkwg6qlx0ts" path="res://assets/Kyle Fuji/Helpers/Snow Man/nose.tscn" id="5_nose"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_body"]
+size = Vector3(0.51708984, 1.0855103, 0.5128174)
+
+[node name="Snowman" type="StaticBody3D" groups=["snowman"]]
+script = ExtResource("1_snowman")
+scale = Vector3(2, 2, 2)
+
+[node name="SnowmanBody" parent="." instance=ExtResource("2_body")]
+
+[node name="snow_man" parent="SnowmanBody" index="0"]
+material_override = ExtResource("3_mat")
+
+[node name="arms" parent="." instance=ExtResource("4_arms")]
+
+[node name="nose" parent="." instance=ExtResource("5_nose")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0041503906, 0.5413513, 0.0005493164)
+shape = SubResource("BoxShape3D_body")

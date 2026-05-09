@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://xt3r2wmy855k"]
+
+[ext_resource type="Texture2D" uid="uid://bd3tv4i84irmc" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Textures/Tree/tree_diffuse.png" id="1_6ssxc"]
+
+[resource]
+albedo_texture = ExtResource("1_6ssxc")

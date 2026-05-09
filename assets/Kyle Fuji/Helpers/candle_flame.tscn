@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://2fs2dxsbrear"]
+
+[ext_resource type="PackedScene" uid="uid://df7n4npks61l2" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/Candles/candle_flame.glb" id="1_s1vyl"]
+[ext_resource type="Material" uid="uid://bm45r8lykn4q2" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/Candles/M_candle_flame.tres" id="2_xw4ji"]
+
+[node name="candle_flame" instance=ExtResource("1_s1vyl")]
+
+[node name="candle_flame_model" parent="candle_flame/Skeleton3D" index="0"]
+material_override = ExtResource("2_xw4ji")

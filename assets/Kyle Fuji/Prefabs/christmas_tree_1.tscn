@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dhpd2ysaoo2ng"]
+
+[ext_resource type="PackedScene" uid="uid://om0sakou24ri" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/Christmas Tree/tree.glb" id="1_s3g75"]
+[ext_resource type="Material" uid="uid://xt3r2wmy855k" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/Christmas Tree/M_tree.tres" id="2_78l61"]
+[ext_resource type="PackedScene" uid="uid://bin2sjjos6jjl" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Helpers/Christmas Tree/tree_snow.tscn" id="3_u1vic"]
+[ext_resource type="PackedScene" uid="uid://bqjc031wt3v0b" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Helpers/Christmas Tree/ornaments_1.tscn" id="4_ag6fr"]
+[ext_resource type="PackedScene" uid="uid://c6t73sdstnd45" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Helpers/Christmas Tree/ornaments_2.tscn" id="5_x3vxb"]
+[ext_resource type="PackedScene" uid="uid://caue0du00t4ly" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Helpers/Christmas Tree/ornaments_3.tscn" id="6_4sxhn"]
+[ext_resource type="PackedScene" uid="uid://bmgudkhgk3ygx" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Helpers/Christmas Tree/ribbon.tscn" id="7_pjiyc"]
+[ext_resource type="PackedScene" uid="uid://bwy0uauegy4bl" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Helpers/Christmas Tree/star.tscn" id="8_jk35d"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s3g75"]
+size = Vector3(0.15942383, 1.9250793, 0.16992188)
+
+[node name="christmas_tree_1" instance=ExtResource("1_s3g75")]
+
+[node name="tree" parent="." index="0"]
+material_override = ExtResource("2_78l61")
+
+[node name="tree_snow" parent="." index="1" instance=ExtResource("3_u1vic")]
+
+[node name="ornaments_1" parent="." index="2" instance=ExtResource("4_ag6fr")]
+
+[node name="ornaments_2" parent="." index="3" instance=ExtResource("5_x3vxb")]
+
+[node name="ornaments_3" parent="." index="4" instance=ExtResource("6_4sxhn")]
+
+[node name="ribbon" parent="." index="5" instance=ExtResource("7_pjiyc")]
+
+[node name="star" parent="." index="6" instance=ExtResource("8_jk35d")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="7"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004760742, 0.96113586, 0.0009765625)
+shape = SubResource("BoxShape3D_s3g75")

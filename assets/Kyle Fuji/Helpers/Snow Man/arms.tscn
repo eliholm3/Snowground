@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cvjkgyomgsnd"]
+
+[ext_resource type="PackedScene" uid="uid://c6xcr7aine8sm" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/Snow Man/arms.glb" id="1_16o3h"]
+[ext_resource type="Material" uid="uid://dg4yknu8sds5r" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/Snow Man/M_snow_man_arms.tres" id="2_chpd4"]
+
+[node name="arms" instance=ExtResource("1_16o3h")]
+
+[node name="arms" parent="." index="0"]
+material_override = ExtResource("2_chpd4")

@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cq3rprbeydfns"]
+
+[ext_resource type="Shader" uid="uid://bjqm468xj5khm" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/S_basic_texture_mapper.gdshader" id="1_31q7p"]
+[ext_resource type="Texture2D" uid="uid://c5u6h7584uar5" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Textures/Presents/present_1_texture.png" id="2_0nn0c"]
+
+[resource]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("1_31q7p")
+shader_parameter/color_map = ExtResource("2_0nn0c")
+shader_parameter/color1 = Color(0, 0, 1, 1)
+shader_parameter/color2 = Color(1, 0, 0, 1)
+shader_parameter/metallic1 = 1.0
+shader_parameter/metallic2 = 0.0
+shader_parameter/roughness1 = 0.50000002375
+shader_parameter/roughness2 = 0.50000002375

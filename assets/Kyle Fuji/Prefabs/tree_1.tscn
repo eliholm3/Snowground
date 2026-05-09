@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://r6wtl5gxmxqp"]
+
+[ext_resource type="PackedScene" uid="uid://om0sakou24ri" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Models/Christmas Tree/tree.glb" id="1_gngjc"]
+[ext_resource type="Material" uid="uid://xt3r2wmy855k" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Materials/Christmas Tree/M_tree.tres" id="2_ioic3"]
+[ext_resource type="PackedScene" uid="uid://bin2sjjos6jjl" path="res://Low Poly Christmas Asset Pack/Kyle Fuji/Helpers/Christmas Tree/tree_snow.tscn" id="3_4y5o0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gngjc"]
+size = Vector3(0.15942383, 1.9250793, 0.16992188)
+
+[node name="tree_1" instance=ExtResource("1_gngjc")]
+
+[node name="tree" parent="." index="0"]
+material_override = ExtResource("2_ioic3")
+
+[node name="tree_snow" parent="." index="1" instance=ExtResource("3_4y5o0")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004760742, 0.96113586, 0.0009765625)
+shape = SubResource("BoxShape3D_gngjc")
