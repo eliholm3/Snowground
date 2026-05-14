@@ -53,4 +53,4 @@ The environment is alive — snow falls from above, obscuring your vision and le
 
 ---
 
-*Built with [Godot Engine](https://godotengine.org/) · Snowground &copy; 2024*
+
